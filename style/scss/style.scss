@@ -1,0 +1,17 @@
+// Reset / initial definitons
+@import "loader";
+@import "colors";
+@import "functions";
+@import "mixins";
+@import "global";
+@import "typo";
+
+// Sections
+@import "sections/header";
+@import "sections/inicio";
+@import "sections/sobre";
+@import "sections/portfolio";
+@import "sections/servicos";
+@import "sections/servicos-extra";
+@import "sections/contato";
+@import "sections/footer";

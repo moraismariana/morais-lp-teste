@@ -1,0 +1,40 @@
+#inicio {
+  background-image: url("../../img/inicio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  div {
+    @include container;
+    // 100vh - tamanho do header
+    height: calc(100vh - 92.5px);
+    color: $w;
+    @include screen(notebook-m) {
+      height: calc(100vh - 88.5px);
+    }
+    @include screen(tablet) {
+      height: 100vh;
+    }
+    h1 {
+      @include title-1;
+      text-align: center;
+      position: relative;
+      top: calc(50% - 92.5px);
+      @include screen(notebook-m) {
+        top: calc(50% - 80.5px);
+        font-size: px-rem(48px);
+      }
+      @include screen(notebook-s) {
+        font-size: px-rem(40px);
+      }
+      @include screen(tablet) {
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: px-rem(37px);
+      }
+      @include screen(mobile) {
+        font-size: px-rem(29px);
+      }
+    }
+  }
+  @include mbottom-1;
+}

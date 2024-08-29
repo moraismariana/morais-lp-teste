@@ -1,0 +1,31 @@
+#servicos {
+  @include container;
+  @include mbottom-1;
+  h2 {
+    @include title-2;
+    @include mbottom-2;
+    text-align: center;
+  }
+  .servicos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    // max-width: fit-content;
+    @include align-div;
+    @include screen(notebook-s) {
+      gap: 40px;
+    }
+    h3 {
+      @include title-3;
+      @include mbottom-3;
+    }
+    p {
+      @include text-2;
+      //   max-width: 24ch;
+    }
+
+    @include screen(tablet) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
